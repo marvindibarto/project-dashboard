@@ -99,6 +99,81 @@ h1, p{
  grid-column: 2/3;
 }
 
+.content-structure{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+.projects-header{
+    grid-column: 1/-1;
+    margin-left: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    height: 140px;
+    border-left: solid orange 4px;
+}
+
+.project-card>h1{
+    font-size: 16px;
+}
+
+.project-card>p{
+    font-size: 14px;
+}
+
+.pc-icons{
+    display: flex;
+    justify-content:end;
+    margin-top: auto;
+    gap: 20px;
+}
+
+.pc-icons>.icon:hover{
+    border: solid lightblue 1px;
+}
+
+.content-sb{
+
+}
+
+.announcements{
+
+}
+
+.a-item{
+
+}
+
+.trending{
+
+}
+
+.t-item{
+
+}
+
+.project-card, .announcements>*, .trending>*{
+    box-shadow: 0 4px 2px -2px gray;
+
+}
+
 .button{
     background-color: rgb(74, 172, 202);
     color: white;
