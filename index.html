@@ -4,16 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div class="structure">
        <div class="header">
-            <h1>Header</h1>
+            <div class="header-firstRow">
+                <div class="h-flex-columnA">
+                    <img src="assets/search-icon.png" alt="Search Icon" class="icon">
+                    <input type="text" placeholder="Find what you're looking for!">
+                </div>
+                <div class="h-flex-columnB">
+                    <img src="assets/bell-icon.png" alt="Search Icon" class="iconn" style="height: 20px; width: 25px;">
+                    <img src="assets/profile-icon.png" alt="Search Icon" class="icon" style="height: 35px; width: 35px;">
+                    <p>Morgan Oakley</p>
+                </div>
+            </div>
+            <div class="header-secondRow">
+                <div class="h-flex-columnB">
+                    <img src="assets/profile-icon.png" alt="Search Icon" class="icon" style="height: 60px; width: 60px;">
+                    <div>
+                        <p>Hi there,</p>
+                        <h1>Morgan Oakley (@morgan)</h1>
+                    </div>
+                </div>
+                <div class="h-flex-columnB">
+                    <button class="button">New</button>
+                    <button class="button">Upload</button>
+                    <button class="button">Share</button>
+                </div>
+            </div>
         </div>
         <div class="sidebar">
-            <div class="heading-sb">
-                <img src="icon.png" alt="Dashboard Icon" style="height: 20px; width: 20px;">
+            <div class="sb-heading">
+                <img src="assets/dashboard-icon.png" alt="Dashboard Icon" class="icon">
                 <h1>Dashboard</h1>
             </div>
             <div class="sb-section">

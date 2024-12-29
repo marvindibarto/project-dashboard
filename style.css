@@ -1,12 +1,22 @@
 html, body{
     height: 100%;
+    width: 100%;
     padding: 0px;
+    margin-top: 8px;
     margin: 0px;
+    background-color: lightgrey;
+    font-family: Roboto;
+}
+
+h1, p{
+    margin: 0px;
+    padding: 0px;
 }
 
 .structure{
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-template-rows: 25% 75%;
     height: 100%;
 }
 
@@ -23,7 +33,7 @@ html, body{
     font-weight: bold;
 }
 
-.heading-sb{
+.sb-heading{
     display: flex;
     align-items: center;
     gap: 8px;
@@ -44,8 +54,74 @@ html, body{
 
 .header{
     grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 48px 0px 32px;
+    justify-content: flex-start;
+    box-shadow: 0 4px 2px -2px gray;
+    background-color: white;
+    gap: 12px;
+}
+
+.header-firstRow, .header-secondRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-firstRow{
+    max-height: 50px;
+    margin-bottom: 0px;
+}
+
+.header-secondRow{
+    max-height: 80px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.h-flex-columnA, .h-flex-columnB{
+    display: flex;
+    align-items: center;
+}
+
+.h-flex-columnA{
+    gap: 4px;
+    width: 25%;
+}
+
+.h-flex-columnB{
+    gap: 12px;
+    justify-content: end;
 }
 
 .content{
  grid-column: 2/3;
+}
+
+.button{
+    background-color: rgb(74, 172, 202);
+    color: white;
+    border-radius: 16px;
+    min-width: 80px;
+    min-height: 32px;
+    border: none;
+    justify-self: end;
+    font-weight: bold;
+}
+
+.button:hover{
+    border: solid lightgray 1px;
+    background-color: rgb(64, 149, 175);
+}
+
+.icon{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+input{
+    border-radius: 8px;
+    width: 100%;
 }
