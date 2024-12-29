@@ -150,7 +150,7 @@ h1, p{
 }
 
 .content-sb{
-
+    display: flex;
 }
 
 .announcements{
